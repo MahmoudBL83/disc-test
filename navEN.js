@@ -1,0 +1,152 @@
+let navs = document.querySelector('nav').querySelectorAll('div');
+let asides = document.querySelector('aside').querySelectorAll('div')
+navs[0].addEventListener('click',()=>{
+    location.replace('https://www.iptc.com.sa/en/main/')
+})
+document.querySelector('nav').querySelector('img').addEventListener('click',()=>{
+    location.replace('https://www.iptc.com.sa/en/main/')
+})
+navs[1].addEventListener('click',()=>{
+    location.replace('https://www.iptc.com.sa/en/about-us/')
+})
+navs[2].querySelector('article').addEventListener('mouseover',(e)=>{
+    navs[2].querySelector('.slide').classList.remove('hidden')
+})
+navs[2].querySelector('.slide').addEventListener('mouseover',(e)=>{
+    navs[2].querySelector('.slide').classList.remove('hidden')
+})
+navs[2].querySelector('article').addEventListener('mouseout',(e)=>{
+    navs[2].querySelector('.slide').classList.add('hidden')
+})
+navs[2].querySelector('.slide').addEventListener('mouseout',(e)=>{
+    navs[2].querySelector('.slide').classList.add('hidden')
+})
+navs[2].querySelector('span').querySelectorAll('span')[0].addEventListener('click',()=>{
+    location.replace('https://iptc.com.sa/e-training/')
+})
+navs[2].querySelector('span').querySelectorAll('span')[1].querySelector('article').addEventListener('mouseover',()=>{
+    navs[2].querySelector('span').querySelectorAll('span')[1].querySelector('.slide').classList.remove('hidden')
+})
+navs[2].querySelector('span').querySelectorAll('span')[1].querySelector('.slide').addEventListener('mouseover',()=>{
+    navs[2].querySelector('span').querySelectorAll('span')[1].querySelector('.slide').classList.remove('hidden')
+})
+navs[2].querySelector('span').querySelectorAll('span')[1].querySelector('article').addEventListener('mouseout',()=>{
+    navs[2].querySelector('span').querySelectorAll('span')[1].querySelector('.slide').classList.add('hidden')
+})
+navs[2].querySelector('span').querySelectorAll('span')[1].querySelector('.slide').addEventListener('mouseout',()=>{
+    navs[2].querySelector('span').querySelectorAll('span')[1].querySelector('.slide').classList.add('hidden')
+})
+navs[2].querySelector('span').querySelectorAll('span')[1].querySelector('.slide').querySelectorAll('span')[0].addEventListener('click',()=>{
+    location.replace('https://www.iptc.com.sa/en/public-courses/')
+})
+navs[2].querySelector('span').querySelectorAll('span')[1].querySelector('.slide').querySelectorAll('span')[1].addEventListener('click',()=>{
+    location.replace('https://www.iptc.com.sa/en/corporate-training/')
+})
+navs[3].addEventListener('mouseover',(e)=>{
+    navs[3].querySelector('.slide').classList.remove('hidden')
+})
+navs[3].querySelector('.slide').addEventListener('mouseover',(e)=>{
+    navs[3].querySelector('.slide').classList.remove('hidden')
+})
+navs[3].addEventListener('mouseout',(e)=>{
+    navs[3].querySelector('.slide').classList.add('hidden')
+})
+navs[3].querySelector('.slide').addEventListener('mouseout',(e)=>{
+    navs[3].querySelector('.slide').classList.add('hidden')
+})
+navs[3].querySelector('.slide').addEventListener('click',(e)=>{
+    location.replace('./registirationEN.html')
+})
+navs[4].addEventListener('click',()=>{
+    location.replace('https://www.iptc.com.sa/en/clients/')
+})
+navs[5].addEventListener('click',()=>{
+    location.replace('https://www.iptc.com.sa/en/media-center/')
+})
+navs[6].addEventListener('click',()=>{
+    location.replace('https://www.iptc.com.sa/en/contacts/')
+})
+navs[7].addEventListener('click',()=>{
+    location.replace('../registiration.html')
+})
+
+/**************************************************************/
+
+asides[0].addEventListener('click',()=>{
+    location.replace('https://www.iptc.com.sa/en/main/')
+})
+document.querySelector('nav').querySelector('img').addEventListener('click',()=>{
+    location.replace('https://www.iptc.com.sa/en/main/')
+})
+asides[1].addEventListener('click',()=>{
+    location.replace('https://www.iptc.com.sa/en/about-us/')
+})
+asides[2].querySelector('article').addEventListener('click',()=>{
+    if(asides[2].querySelector('.slide').classList.contains('hidden'))
+    asides[2].querySelector('.slide').classList.remove('hidden')
+    else
+    asides[2].querySelector('.slide').classList.add('hidden')
+})
+asides[2].querySelector('.fa-angle-down').addEventListener('click',()=>{
+    if(asides[2].querySelector('.slide').classList.contains('hidden'))
+    asides[2].querySelector('.slide').classList.remove('hidden')
+    else
+    asides[2].querySelector('.slide').classList.add('hidden')
+})
+asides[2].querySelector('span').querySelectorAll('span')[0].addEventListener('click',()=>{
+    location.replace('https://iptc.com.sa/e-training/')
+})
+asides[2].querySelector('span').querySelectorAll('span')[1].querySelector('article').addEventListener('click',()=>{
+    if(asides[2].querySelector('span').querySelectorAll('span')[1].querySelector('.slide').classList.contains('hidden')){
+        asides[2].querySelector('span').querySelectorAll('span')[1].querySelector('.slide').classList.remove('hidden')
+    }
+    else{
+        asides[2].querySelector('span').querySelectorAll('span')[1].querySelector('.slide').classList.add('hidden')
+    }
+})
+asides[2].querySelector('span').querySelectorAll('span')[1].querySelector('.fa-angle-down').addEventListener('click',()=>{
+    if(asides[2].querySelector('span').querySelectorAll('span')[1].querySelector('.slide').classList.contains('hidden')){
+        asides[2].querySelector('span').querySelectorAll('span')[1].querySelector('.slide').classList.remove('hidden')
+    }
+    else{
+        asides[2].querySelector('span').querySelectorAll('span')[1].querySelector('.slide').classList.add('hidden')
+    }
+})
+asides[2].querySelector('span').querySelectorAll('span')[1].querySelectorAll('span')[0].addEventListener('click',()=>{
+    location.replace('https://www.iptc.com.sa/en/public-courses/')
+})
+asides[2].querySelector('span').querySelectorAll('span')[1].querySelectorAll('span')[1].addEventListener('click',()=>{
+    location.replace('https://www.iptc.com.sa/en/corporate-training/')
+})
+asides[3].addEventListener('click',()=>{
+    if(asides[3].querySelector('.slide').classList.contains('hidden'))
+    asides[3].querySelector('.slide').classList.remove('hidden')
+    else
+    asides[3].querySelector('.slide').classList.add('hidden')
+})
+asides[3].querySelector('span').addEventListener('click',()=>{
+    location.replace('./registirationEN.html')
+})
+asides[4].addEventListener('click',()=>{
+    location.replace('https://www.iptc.com.sa/en/clients/')
+})
+asides[5].addEventListener('click',()=>{
+    location.replace('https://www.iptc.com.sa/en/media-center/')
+})
+asides[6].addEventListener('click',()=>{
+    location.replace('https://www.iptc.com.sa/en/contacts/')
+})
+asides[7].addEventListener('click',()=>{
+    location.replace('../registiration.html')
+})
+
+document.querySelector('.fa-bars').addEventListener('click',(e)=>{
+    if(document.querySelector('aside').classList.contains('hidden')){
+        document.querySelector('aside').classList.remove('hidden')
+        document.body.style='overflow:hidden!important'
+    }
+    else{
+        document.querySelector('aside').classList.add('hidden')
+        document.body.style=''
+    }
+})

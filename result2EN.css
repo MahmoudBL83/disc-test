@@ -1,0 +1,543 @@
+:root{
+    --main:#f39200;
+    --sec:#524438;
+    --third:#B9A89A;
+    --forth:#0071dc;
+    --fifth:#009178;
+}
+
+html{
+    margin:0px;
+    padding:0px;
+    width:100vw;
+    height:100%;
+}
+
+body{
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
+    font-family: Raleway, sans-serif;
+    overflow-x:hidden;
+    position: relative;
+    background-color: #f4f3ee;
+}
+
+.mainTitle{
+    margin:50px auto 50px auto;
+    width:fit-content;
+    position: relative;
+    direction: rtl;
+}
+
+.mainTitle::after{
+    margin:0px auto 0px auto;
+    border-bottom:10px solid var(--sec);
+    padding-bottom: -20px;
+    position: absolute;
+    bottom:-8px;
+    box-shadow: 0px 2px 3px gray;
+    height:0px;
+    width:100%;
+    content: '';
+    left:0;
+}
+
+.hidden{
+    display: none!important;
+}
+
+.coloredNav{
+    background-color: var(--sec);
+    color:white;
+}
+
+/****************************/
+
+.ar{
+    display: flex;
+    justify-content: space-around;
+}
+
+table div{
+    display:inline-block;
+}
+
+tr{
+    border-top:1px solid black;
+}
+td, th {
+    text-align: center;
+    padding: 8px;
+}
+
+svg{
+    height:100%;
+}
+
+#graph th,#graph td,#graph tr{
+    border:0px;
+}
+
+/*****************************/
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top:0;
+    width:100%;
+    font-size: 1.5rem;
+    color:var(--sec);
+    background-color: white;
+    z-index:10;
+    border-bottom:2px solid var(--sec);
+    height:76px;
+}
+
+nav > div{
+    padding:20px;
+    cursor: pointer;
+}
+
+nav>div:hover{
+    background-color: var(--sec);
+    color:snow;
+}
+
+nav span{
+    position: absolute;
+    left:10%;
+    background-color: var(--sec);
+    color:snow;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:0px 20px 0px 20px;
+    cursor: pointer;
+}
+
+nav img{
+    position: absolute;
+    right:10%;
+    height:60px;
+}
+
+/**********************************/
+
+header{
+    height:30vh;
+    width:80%;
+    /*background: conic-gradient(from .5turn at 50% 110%, white, orange);*/
+    display:flex;
+    flex-direction: column;
+    padding:135px 10% 50px 10%;
+    background-image: url(../Photos/Aptitude-Employment-Tests-Prep.jpg);
+    background-size: cover;
+    position: relative;
+    justify-content: center;
+    background-position: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+header::after{
+    position: absolute;
+    content: '';
+    width:100%;
+    height:100%;
+    background-color: gray;
+    opacity: 0.4;
+    left:0;
+    top:0;
+    background-position: top;
+}
+
+header >h1{
+    color:white;
+    text-shadow: 0 0 3px black;
+    font-size:4rem;
+    z-index:5;
+    direction: rtl;
+    margin:0;
+}
+
+/*************************************************/
+#resBox{
+    display: flex;
+    flex-wrap: wrap;
+    gap:40px;
+    width:80%;
+    margin-left: 10%;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 10%;
+}
+
+.res{
+    display:inline-flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+    width:100%;
+    margin:0;
+}
+
+.res > div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    width:100%;
+    align-items: flex-start;
+    background:conic-gradient(at 0% 0%, snow, orange);
+}
+
+.res h1{
+    background:var(--sec);
+    margin:0px;
+    width:100%;
+    text-align: center;
+    font-size:2rem!important;
+    color:white;
+    flex-basis: 100%;
+    text-shadow: 0 0 2px black;
+    padding:10px 0px 10px 0px;
+}
+
+.res aside{
+    display: flex;
+    flex-direction: row;
+    flex-basis:20%;
+    text-align: center;
+    height:100%;
+    width:100%;
+    justify-content: center;
+}
+
+.res > div >  div{
+    width:calc(100% - 40px);
+    text-align: start;
+    padding:20px;
+    font-size:2rem;
+    direction: ltr;
+}
+
+.res aside div{
+    padding:5px 20px 5px 20px;
+    border:1px solid gray;
+    background-color: snow;
+    cursor: pointer;
+    font-size:1.2rem;
+}
+
+#res2>div>div{
+    flex-basis:100%;
+}
+
+/*******************************************/
+
+#graph-table{
+    display: flex;
+    flex-direction: column-reverse;
+    width:80%;
+    margin-left: 10%;
+    margin-right:10%;
+    gap:40px;
+}
+#graph-table> div{
+    flex-basis:100%;
+    position: relative;
+    box-shadow: rgb(100 100 111 / 20%) 0px 7px 29;
+}
+
+table {
+    font-family: inherit;
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid black;
+    direction: ltr;
+    color:black;
+    text-shadow: 0 0 1px white;
+    font-weight: bold;
+}
+
+
+#graph{
+    margin:0px auto 0px auto;
+    width:40%;
+}
+
+/******************************************************************/
+
+#prin{
+    display: flex;
+    width:80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    flex-wrap:wrap;
+    gap:10px;
+    direction: ltr;
+}
+
+#prin > div{
+    flex-basis:calc(33% - 65px);
+    position: relative;
+    background-color: var(--sec);
+    color:white;
+    padding:30px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    direction: ltr;
+}
+
+#prin > div:hover{
+    background-color: transparent;
+    color:black;
+}
+
+#prin > div::after{
+    position: absolute;
+    font-size:7rem;
+    opacity: 0.2;
+    top:-10px;
+    right:20px;
+}
+
+#prin h1{
+    margin-bottom: 40px;
+    margin-right:50px;
+}
+
+#prin1::after{
+    content: '1';
+}
+#prin2::after{
+    content: '2';
+}
+#prin3::after{
+    content: '3';
+}
+#prin4::after{
+    content: '4';
+}
+#prin5::after{
+    content: '5';
+}
+#prin6::after{
+    content: '6';
+}
+
+/************************************************/
+
+#uses{
+    display: flex;
+    width:80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    flex-wrap:wrap;
+    gap:10px;
+    flex-direction: row;
+}
+
+#uses  div{
+    flex-basis:calc(33% - 45px);
+    text-align: start;
+    position: relative;
+    background: conic-gradient(at 0% 0%, snow, orange);
+    color:white;
+    padding:30px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    color:#524438
+}
+
+#uses img{
+    position: absolute;
+    right:0;
+    height:100%;
+    /*top:50%;
+    transform: translateY(-50%);*/
+    bottom:0;
+    opacity: 0.07;
+}
+#uses span{
+    display: inline-block;
+    margin-right:25%;
+    font-weight: bold;
+}
+
+.big img{
+    height:50%!important;
+}
+
+#spec{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    background: unset!important;
+    padding: unset!important;
+    box-shadow:unset!important
+}
+
+hr{
+    border-color: #524438;
+    width: 90%;
+}
+
+/*************************************************************/
+
+#notes{
+    display: flex;
+    width:80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    flex-wrap:wrap;
+    gap:10px;
+    direction: ltr;
+}
+
+#notes > div{
+    flex-basis:calc(33% - 85px);
+    background-image: url(../Photos/card-removebg-preview.png);
+    color:black;
+    padding:150px 40px 40px 40px;
+    background-size: cover;
+    direction: ltr;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: top;
+    font-size:1.4rem;
+}
+
+#notes > div:hover{
+    background-color: transparent;
+    color:black;
+}
+
+/*************************************************************/
+
+article{
+    background-color: snow;
+    height:100vh;
+    position: relative;
+    z-index:80;
+    font-size:3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rr{
+    flex-basis:calc(50% - 70px)!important;
+}
+
+@media(max-width:1154px){
+    aside > div{
+        font-size:0.9rem!important;
+        padding-right:3px!important;
+        padding-left:3px!important;
+    }
+    .res > div > div{
+        font-size:1.8rem;
+    }
+}
+@media(max-width:780px){
+    aside > div{
+        font-size:0.8rem!important;
+        padding-right:3px!important;
+        padding-left:3px!important;
+    }
+    #graph{
+        width:100%
+    }
+    #resBox,#graph-table,#prin,#uses{
+        width:90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .res > div > div{
+        font-size:1.5rem;
+    }
+}
+
+@media(max-width:1220px){
+    #prin>div{
+        flex-basis:calc(50% - 65px);
+    }
+    #uses>div{
+        flex-basis:calc(50% - 35px);
+    }
+    #notes>div{
+        flex-basis:calc(50% - 85px);
+        font-size:1.2rem;
+    }
+    .t{
+        flex-basis:calc(100% - 50px)!important;
+    }
+    .rr{
+        flex-basis: calc(50% - 65px)!important;
+    }
+}
+
+@media(max-width:727px){
+    #prin>div{
+        flex-basis:calc(100% - 65px)
+    }
+    #uses>div{
+        flex-basis:calc(100% - 0px)!important
+    }
+}
+
+@media(max-width:870px){
+    #notes > div{
+        flex-basis:calc(100% - 85px)
+    }
+}
+
+@media(max-width:640px){
+    #notes > div{
+        padding-top:120px;
+    }
+}
+@media(max-width:500px){
+    #notes > div{
+        padding-top:100px;
+    }
+}
+
+/****************************************/
+
+/*nav*/
+
+@media(max-width:1116px){
+    nav{
+        font-size: 1.3rem;
+    }  
+}
+@media(max-width:1404px){
+    nav{
+        font-size: 1.2rem;
+    }  
+    nav img{
+        right:20px;
+    }
+    nav span{
+        left:0px;
+    }
+}
+@media(max-width:1065px){
+    nav > div{
+        display:none;
+    }  
+}
+
+@media(max-width:816px){
+    .res aside{
+        flex-direction: column;
+    }
+}

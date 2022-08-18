@@ -1,0 +1,194 @@
+nav{
+    display: flex;
+    justify-content: flex-end;
+    padding:10px 10% 10px 10%;
+    position: relative;
+    height:98px;
+    align-items: center;
+    font-size:1.3rem;
+    background-color: #f7f7f7;
+    z-index: 2;
+}
+
+aside{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding:20px;
+    width:100%;
+    height:100vh;
+    font-size:1.3rem;
+    background-color: #f7f7f7;
+}
+
+aside > div{
+    padding:10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+nav > div{
+    padding:10px;
+    cursor: pointer;
+    transition: 0.2s;
+    position: relative;
+}
+
+nav > div:hover{
+    color:#eea022;
+}
+
+aside > div:hover{
+    color:#eea022;
+}
+
+nav img{
+    height:80px;
+    position: absolute;
+    left:10%;
+    top:50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+nav i{
+    font-size:2rem!important;
+    background-color: #e27e39;
+    padding:8px 10px 8px 10px;
+    border-radius: 50%;
+    margin-right:10px;
+    cursor: pointer;
+}
+
+.hidden{
+    display:none!important;
+}
+
+.overflow{
+    overflow: hidden!important;
+}
+
+nav .slide{
+    position: absolute;
+    top:calc(78%);
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    padding:20px;
+    display:block;
+    width:fit-content;
+    white-space: nowrap;
+    border-radius:10px;
+    left:0;
+    color:black;
+}
+
+.slide span{
+    display: block;
+    padding:10px;
+    text-align: start;
+}
+
+.slide> span:hover{
+    color:#eea022;
+}
+
+.slide > span >.slide > span:hover{
+    color:#eea022;
+}
+
+i:hover{
+    background-color: #e8e8e8;
+}
+
+/****************************/
+aside{
+    position: relative;
+}
+
+aside i{
+    position: absolute;
+    right:70px;
+}
+
+aside .slide{
+    padding:0;
+    display:block;
+    width:fit-content;
+    white-space: nowrap;
+    border-radius:10px;
+    left:0;
+    padding-top:10px;
+    color:black;
+}
+
+article{
+    text-align: start;
+}
+
+aside > div{
+    text-align: start;
+}
+
+aside i,nav i,aside article,aside i{
+    display: inline-block;
+}
+
+/*****************************/
+
+
+@media(max-width:1373px){
+    nav img{
+        left:5%;
+    }
+    nav{
+        padding:10px 5% 10px 5%;
+    }
+}
+
+@media(max-width:1215px){
+    nav img{
+        left:10px;
+    }
+    nav{
+        padding:10px 10px 10px 10px;
+    }
+}
+
+@media(max-width:1105px){
+    nav img{
+        height:70px
+    }
+    nav{
+        font-size: 1.1rem;
+        height:76px
+    }
+}
+
+@media(min-width:975px){
+    nav .fa{
+        display:none;
+    }
+    aside{
+        display:none;
+    }
+}
+
+@media(max-width:975px){
+    nav > div{
+        display:none!important;
+    }
+    nav .fa{
+        display:block!important;
+    }
+}
+
+@media(max-width:376px){
+    nav img{
+        height:60px
+    }
+}
+@media(max-width:318px){
+    nav img{
+        height:50px
+    }
+}

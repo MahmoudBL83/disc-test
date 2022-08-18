@@ -1,0 +1,149 @@
+:root{
+    --main:#e57e25;
+    --sec:#524438;
+    --third:#B9A89A;
+    --forth:#0071dc;
+    --fifth:#009178;
+}
+
+body{
+    margin:0;
+    height: 100%;
+    text-align: center;
+    /*font-family: 'Cairo', sans-serif;*/
+    font-family: 'Almarai', sans-serif;
+    background-color: snow;
+}
+#r1 form{
+    width:50%;
+    margin-left: 50%;
+    margin-top:25px;
+    margin-bottom:25px;
+    transform: translateX(-50%);
+    background-color: white;
+}
+
+#r1 sup{
+    color:red;
+}
+
+#r1 #sub{
+    width:215px;
+    height:54px;
+    background-color:#e57e25;
+    color:white;
+    border-radius:30px;
+    border:0px;
+    font-size: 1.5rem;
+    font-family: inherit;
+    margin-top:25px;
+    cursor:pointer;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom:40px;
+}
+
+#r1 fieldset div div{
+    display:flex;
+    flex-direction: row-reverse;
+}
+
+#r1 fieldset div div label{
+    flex-basis: 30%;
+}
+#r1 fieldset div div span{
+    flex-basis: 30%;
+}
+
+#r1 .next{
+    width:calc(100% - 10px);
+    height:54px;
+    background-color:var(--main);
+    text-shadow: 0 0 2px black;
+    color:white;
+    border:0px;
+    font-size: 1.5rem;
+    font-family: inherit;
+    margin-top:25px;
+    cursor:pointer;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding:5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#r1 fieldset{
+    border:0px;
+}
+
+#r1 .legend{
+    display:block;
+    text-align: end;
+    margin: 10px 10px 10px 0
+}
+
+#r1 #reg{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width:100%;
+    box-shadow:0px 0px 3px 0px rgb(204 196 196);
+    padding:0px;
+    margin-bottom:50px;
+}
+
+#r1 #reg h1{
+    color:var(--main);
+    border-bottom:1px solid black;
+    padding-bottom:20px;
+    padding-top:20px;
+    margin-top:0px;
+    background-color: snow;
+}
+
+#r1 #emailAddress{
+    width:calc(100% - 22px);
+    height:20px;
+    padding:10.880px;
+    border-radius: 7px;
+    flex-basis:40%;
+}
+
+#r1 input,select{
+    border:0px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+@media(max-width:677px){
+    #r1 form{
+        width:90%;
+    }
+    #r1 #reg div{
+        flex-direction: column;
+    }
+    #r1 input{
+        width: 93% !important;
+    }
+    #r1 #name{
+        transform:translateX(-7px)
+    }
+    #r1 > div{
+        height:200px!important;
+    }
+}
+@media(max-width:463px){
+    #r1 form{
+        width:90%;
+    }
+    #r1 #reg div{
+        flex-direction: column;
+    }
+    #r1 input{
+        width: 90% !important;
+    }
+    #r1 #name{
+        transform:translateX(-7px)
+    }
+}
