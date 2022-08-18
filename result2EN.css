@@ -135,7 +135,7 @@ header{
     display:flex;
     flex-direction: column;
     padding:135px 10% 50px 10%;
-    background-image: url(../Photos/Aptitude-Employment-Tests-Prep.jpg);
+    background-image: url(./Aptitude-Employment-Tests-Prep.jpg);
     background-size: cover;
     position: relative;
     justify-content: center;
@@ -403,7 +403,7 @@ hr{
 
 #notes > div{
     flex-basis:calc(33% - 85px);
-    background-image: url(../Photos/card-removebg-preview.png);
+    background-image: url(./card-removebg-preview.png);
     color:black;
     padding:150px 40px 40px 40px;
     background-size: cover;
