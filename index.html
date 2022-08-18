@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
@@ -16,6 +15,8 @@
         <link href="./registiration.css" rel="stylesheet">
         <link href="./form.css" rel="stylesheet">
         <link href="./nav.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js" integrity="sha256-2Pjr1OlpZMY6qesJM68t2v39t+lMLvxwpa8QlRjJroA=" crossorigin="anonymous"></script>
     </head>
     <body>
         <nav>
@@ -111,6 +112,9 @@
                             <span class="legend"><sup>*</sup>الاختبار المختار</span>
                             <select class="form-control" style="width:99%;height:50px;padding:15.880px;border-radius: 7px;color:black">
                                 <option value="DISC">DISC</option>
+                                <option value="OPID">another option</option>
+                                <option value="OPID">another option</option>
+                                <option value="OPID">another option</option>
                             </select>
                         </div>
                     </fieldset>
@@ -354,29 +358,18 @@
                     <legend for="720248199">5</legend>
                     <div class="form-group">
                         <div>
-                            <span>ج. معتدل</span>
+                            <span>أ. مغامر</span>
                             <label class="radio-inline">
-                                <input type="radio" name="entry.1058329273" value="الأكثر" >
+                                <input type="radio" name="entry.1515827145" value="الأكثر" >
                                
                             </label>
                             <label class="radio-inline">
-                                <input type="radio" name="entry.1058329273" value="الأقل" >
+                                <input type="radio" name="entry.1515827145" value="الأقل" >
                                
                             </label>
                         </div>
                         <div>
                             <span>د. قليل الأخطاء</span>
-                            <label class="radio-inline">
-                                <input type="radio" name="entry.130032755" value="الأكثر" >
-                               
-                            </label>
-                            <label class="radio-inline">
-                                <input type="radio" name="entry.130032755" value="الأقل" >
-                               
-                            </label>
-                        </div>
-                        <div>
-                            <span>ب. لا تهمه التفاصيل</span>
                             <label class="radio-inline">
                                 <input type="radio" name="entry.1679241512" value="الأكثر" >
                                
@@ -387,13 +380,24 @@
                             </label>
                         </div>
                         <div>
-                            <span>أ. مغامر</span>
+                            <span>ب. لا تهمه التفاصيل</span>
                             <label class="radio-inline">
-                                <input type="radio" name="entry.1515827145" value="الأكثر" >
+                                <input type="radio" name="entry.130032755" value="الأكثر" >
                                
                             </label>
                             <label class="radio-inline">
-                                <input type="radio" name="entry.1515827145" value="الأقل" >
+                                <input type="radio" name="entry.130032755" value="الأقل" >
+                               
+                            </label>
+                        </div>
+                        <div>
+                            <span>ج. معتدل</span>
+                            <label class="radio-inline">
+                                <input type="radio" name="entry.1058329273" value="الأكثر" >
+                               
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="entry.1058329273" value="الأقل" >
                                
                             </label>
                         </div>
@@ -1347,28 +1351,6 @@
                     <legend for="271583169">25</legend>
                     <div class="form-group">
                         <div>
-                            <span>ج. هاديء الحديث</span>
-                            <label class="radio-inline">
-                                <input type="radio" name="entry.474614793" value="الأكثر" >
-                               
-                            </label>
-                            <label class="radio-inline">
-                                <input type="radio" name="entry.474614793" value="الأقل" >
-                               
-                            </label>
-                        </div>
-                        <div>
-                            <span>ب. خالي من الهموم</span>
-                            <label class="radio-inline">
-                                <input type="radio" name="entry.1487934954" value="الأكثر" >
-                               
-                            </label>
-                            <label class="radio-inline">
-                                <input type="radio" name="entry.1487934954" value="الأقل" >
-                               
-                            </label>
-                        </div>
-                        <div>
                             <span>أ. يفوز عند الجدل</span>
                             <label class="radio-inline">
                                 <input type="radio" name="entry.146035553" value="الأكثر" >
@@ -1382,11 +1364,33 @@
                         <div>
                             <span>د. منظم</span>
                             <label class="radio-inline">
+                                <input type="radio" name="entry.474614793" value="الأكثر" >
+                               
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="entry.474614793" value="الأقل" >
+                               
+                            </label>
+                        </div>
+                        <div>
+                            <span>ج. هاديء الحديث</span>
+                            <label class="radio-inline">
                                 <input type="radio" name="entry.825989195" value="الأكثر" >
                                
                             </label>
                             <label class="radio-inline">
                                 <input type="radio" name="entry.825989195" value="الأقل" >
+                               
+                            </label>
+                        </div>
+                        <div>
+                            <span>ب. خالي من الهموم</span>
+                            <label class="radio-inline">
+                                <input type="radio" name="entry.1487934954" value="الأكثر" >
+                               
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="entry.1487934954" value="الأقل" >
                                
                             </label>
                         </div>
@@ -1560,7 +1564,5 @@
     </body>
     <script src="./form.js"></script>
     <script src="./nav.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js" integrity="sha256-2Pjr1OlpZMY6qesJM68t2v39t+lMLvxwpa8QlRjJroA=" crossorigin="anonymous"></script>
     <script src="./registiration.js"></script>  
 </html>
