@@ -135,7 +135,7 @@ header{
     display:flex;
     flex-direction: column;
     padding:135px 10% 50px 10%;
-    background-image: url(./Aptitude-Employment-Tests-Prep.jpg);
+    background-image: url(../Photos/Aptitude-Employment-Tests-Prep.jpg);
     background-size: cover;
     position: relative;
     justify-content: center;
@@ -224,12 +224,12 @@ header >h1{
     width:calc(100% - 40px);
     text-align: start;
     padding:20px;
-    font-size:2rem;
     direction: rtl;
+    font-size:1.4rem;
 }
 
 .res aside div{
-    padding:5px 20px 5px 20px;
+    padding:5px 10px 5px 10px;
     border:1px solid gray;
     background-color: snow;
     cursor: pointer;
@@ -379,7 +379,7 @@ table {
 
 hr{
     border-color: #524438;
-    width: 90%;
+    width: 100%;
 }
 
 /***********************************************************/
@@ -396,7 +396,7 @@ hr{
 
 #notes > div{
     flex-basis:calc(33% - 85px);
-    background-image: url(./card-removebg-preview.png);
+    background-image: url(../Photos/card-removebg-preview.png);
     color:black;
     padding:150px 40px 40px 40px;
     background-size: cover;
@@ -436,7 +436,7 @@ article{
         padding-left:3px!important;
     }
     .res > div > div{
-        font-size:1.8rem;
+        font-size:1.3rem;
     }
 }
 @media(max-width:780px){
@@ -454,7 +454,7 @@ article{
         margin-right: 5%;
     }
     .res > div > div{
-        font-size:1.5rem;
+        font-size:1.1rem;
     }
 }
 
