@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/result2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <article>
+       أنت غير مسجل
+    </article>
+    <nav>
+      <img src="./Photos/20210128_092646 (1).png">
+      <span id="signOut">تسجيل الخروج</span>
+        <div>صفات نمطك</div>
+        <div>إحصائيات</div>
+        <div>مبادئ الإختبار</div>
+        <div>إستعمالات الإختبار</div>
+    </nav>
+    <header>
+        <h1>مرحبا </h1>
+        <h1>نتيجة إختبار DISC</h1>
+    </header>
+    <h1 class="mainTitle">تعرف على صفات نمطك</h1>
+    <section id="resBox">
+        <section class="res">
+            <div class="common">
+                <h1>النمط الرئيسي: أ المسيطر</h1>
+                <aside>
+                    <div>أهم الصفات الأساسية</div>
+                    <div>يحتاج أن يتعلم أو يغير</div>
+                    <div>الأعمال التي يرتاح لها</div>
+                    <div>أعضاء الفريق المناسبون له</div>
+                    <div>نمط القائد فوقه</div>
+                    <div>أفضل طريقة للتعامل معه</div>
+                    <div>صفات إضافية هامة</div>
+                </aside>
+                <div>
+                </div>
+            </div>
+        </section>
+        <section class="res hidden" id="res2">
+            <div>
+                <h1>النمط الرئيسي: أ المسيطر</h1>
+                <div></div>
+                <hr style = 'border-color: #524438;width: 90%;'>
+                <div></div>
+            </div>
+        </section>
+    </section>
+    <h1 class="mainTitle">إحصائيات</h1>
+    <section id="graph-table">
+        <div id="table">
+            <table>
+                <tr>
+                  <th>الحرف</th>
+                  <th>الأكثر</th>
+                  <th>إطرح منه</th>
+                  <th>الأقل</th>
+                  <th>يساوي</th>
+                  <th>النتيجة</th>
+                </tr>
+                <tr>
+                  <td class="ar"><div>D</div><div>أ</div></td>
+                  <td></td>
+                  <td>-</td>
+                  <td></td>
+                  <td>=</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td class="ar"><div>I</div><div>ب</div></td>
+                  <td></td>
+                  <td>-</td>
+                  <td></td>
+                  <td>=</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td class="ar"><div>S</div><div>ج</div></td>
+                  <td></td>
+                  <td>-</td>
+                  <td></td>
+                  <td>=</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td class="ar"><div>C</div><div>د</div></td>
+                  <td></td>
+                  <td>-</td>
+                  <td></td>
+                  <td>=</td>
+                  <td></td>
+                </tr>
+              </table>
+        </div>
+        <div id="graph">
+            <svg width="100%" style="position:absolute;"><line x1="50" y1="50" x2="350" y2="50" stroke="#524438" id='line1'/></svg>
+            <svg width="100%" style="position:absolute;"><line x1="50" y1="50" x2="350" y2="50" stroke="#524438" id='line2'/></svg>
+            <svg width="100%" style="position:absolute;"><line x1="50" y1="50" x2="350" y2="50" stroke="#524438" id='line3'/></svg>
+            <table style="height:100%" id="table2" style="width:100%" dir="rtl">
+              <tr style="height: 30px;border-top:1px solid black;border-bottom:1px solid black;">
+                <th>أ</th>
+                <th>ب</th>
+                <th>ج</th>
+                <th>د</th>
+              </tr>
+              <tr>
+                <td>28</td>
+                <td>28</td>
+                <td>28</td>
+                <td>28</td>
+              </tr>
+              <tr>
+                <td>27</td>
+                <td>27</td>
+                <td>27</td>
+                <td>27</td>
+              </tr>
+              <tr>
+                <td>26</td>
+                <td>26</td>
+                <td>26</td>
+                <td>26</td>
+              </tr>
+              <tr>
+                <td>25</td>
+                <td>25</td>
+                <td>25</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>24</td>
+                <td>24</td>
+                <td>24</td>
+                <td>24</td>
+              </tr>
+              <tr>
+                <td>23</td>
+                <td>23</td>
+                <td>23</td>
+                <td>23</td>
+              </tr>
+              <tr>
+                <td>22</td>
+                <td>22</td>
+                <td>22</td>
+                <td>22</td>
+              </tr>
+              <tr>
+                <td>21</td>
+                <td>21</td>
+                <td>21</td>
+                <td>21</td>
+              </tr>
+              <tr>
+                <td>20</td>
+                <td>20</td>
+                <td>20</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <td>19</td>
+                <td>19</td>
+                <td>19</td>
+                <td>19</td>
+              </tr>
+              <tr>
+                <td>18</td>
+                <td>18</td>
+                <td>18</td>
+                <td>18</td>
+              </tr>
+              <tr>
+                <td>17</td>
+                <td>17</td>
+                <td>17</td>
+                <td>17</td>
+              </tr>
+              <tr>
+                <td>16</td>
+                <td>16</td>
+                <td>16</td>
+                <td>16</td>
+              </tr>
+              <tr>
+                <td>15</td>
+                <td>15</td>
+                <td>15</td>
+                <td>15</td>
+              </tr>
+              <tr>
+                <td>14</td>
+                <td>14</td>
+                <td>14</td>
+                <td>14</td>
+              </tr>
+              <tr>
+                <td>13</td>
+                <td>13</td>
+                <td>13</td>
+                <td>13</td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td>12</td>
+                <td>12</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>11</td>
+                <td>11</td>
+                <td>11</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>10</td>
+                <td>10</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>9</td>
+                <td>9</td>
+                <td>9</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>8</td>
+                <td>8</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>7</td>
+                <td>7</td>
+                <td>7</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>6</td>
+                <td>6</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>5</td>
+                <td>5</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>4</td>
+                <td>4</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>3</td>
+                <td>3</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>2</td>
+                <td>2</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>-1</td>
+                <td>-1</td>
+                <td>-1</td>
+                <td>-1</td>
+              </tr>
+              <tr>
+                <td>-2</td>
+                <td>-2</td>
+                <td>-2</td>
+                <td>-2</td>
+              </tr>
+              <tr>
+                <td>-3</td>
+                <td>-3</td>
+                <td>-3</td>
+                <td>-3</td>
+              </tr>
+              <tr>
+                <td>-4</td>
+                <td>-4</td>
+                <td>-4</td>
+                <td>-4</td>
+              </tr>
+              <tr>
+                <td>-5</td>
+                <td>-5</td>
+                <td>-5</td>
+                <td>-5</td>
+              </tr>
+              <tr>
+                <td>-6</td>
+                <td>-6</td>
+                <td>-6</td>
+                <td>-6</td>
+              </tr>
+              <tr>
+                <td>-7</td>
+                <td>-7</td>
+                <td>-7</td>
+                <td>-7</td>
+              </tr>
+              <tr>
+                <td>-8</td>
+                <td>-8</td>
+                <td>-8</td>
+                <td>-8</td>
+              </tr>
+              <tr>
+                <td>-9</td>
+                <td>-9</td>
+                <td>-9</td>
+                <td>-9</td>
+              </tr>
+              <tr>
+                <td>-10</td>
+                <td>-10</td>
+                <td>-10</td>
+                <td>-10</td>
+              </tr>
+              <tr>
+                <td>-11</td>
+                <td>-11</td>
+                <td>-11</td>
+                <td>-11</td>
+              </tr>
+              <tr>
+                <td>-12</td>
+                <td>-12</td>
+                <td>-12</td>
+                <td>-12</td>
+              </tr>
+              <tr>
+                <td>-13</td>
+                <td>-13</td>
+                <td>-13</td>
+                <td>-13</td>
+              </tr>
+              <tr>
+                <td>-14</td>
+                <td>-14</td>
+                <td>-14</td>
+                <td>-14</td>
+              </tr>
+              <tr>
+                <td>-15</td>
+                <td>-15</td>
+                <td>-15</td>
+                <td>-15</td>
+              </tr>
+              <tr>
+                <td>-16</td>
+                <td>-16</td>
+                <td>-16</td>
+                <td>-16</td>
+              </tr>
+              <tr>
+                <td>-17</td>
+                <td>-17</td>
+                <td>-17</td>
+                <td>-17</td>
+              </tr>
+              <tr>
+                <td>-18</td>
+                <td>-18</td>
+                <td>-18</td>
+                <td>-18</td>
+              </tr>
+              <tr>
+                <td>-19</td>
+                <td>-19</td>
+                <td>-19</td>
+                <td>-19</td>
+              </tr>
+              <tr>
+                <td>-20</td>
+                <td>-20</td>
+                <td>-20</td>
+                <td>-20</td>
+              </tr>
+              <tr>
+                <td>-21</td>
+                <td>-21</td>
+                <td>-21</td>
+                <td>-21</td>
+              </tr>
+              <tr>
+                <td>-22</td>
+                <td>-22</td>
+                <td>-22</td>
+                <td>-22</td>
+              </tr>
+              <tr>
+                <td>-23</td>
+                <td>-23</td>
+                <td>-23</td>
+                <td>-23</td>
+              </tr>
+              <tr>
+                <td>-24</td>
+                <td>-24</td>
+                <td>-24</td>
+                <td>-24</td>
+              </tr>
+              <tr>
+                <td>-25</td>
+                <td>-25</td>
+                <td>-25</td>
+                <td>-25</td>
+              </tr>
+              <tr>
+                <td>-26</td>
+                <td>-26</td>
+                <td>-26</td>
+                <td>-26</td>
+              </tr>
+              <tr>
+                <td>-27</td>
+                <td>-27</td>
+                <td>-27</td>
+                <td>-27</td>
+              </tr>
+              <tr>
+                <td>-28</td>
+                <td>-28</td>
+                <td>-28</td>
+                <td>-28</td>
+              </tr>
+            </table>
+        </div>
+    </section>
+    <h1 class="mainTitle">مبادئ إختبار Disc</h1>
+    <section id="prin">
+        <div style="background-color: transparent;color:black;" id="prin1">
+            <h1>ليس هناك نمط أفضل</h1>
+            <span>النمط الأفضل هو ما ناسب الموقف (وقد شرحنا ما هي المواقف الأفضل لكل نمط). فإذا لا يوجد نمط أفضل, ولا يوجد ما يسمى القائد الأفضل بشكل عام(وقد أكدت ذلك الأبحاث التي أجريت على DISC)</span>
+        </div>
+        <div id="prin2">
+            <h1>يجب تغيير النمط حسب المرؤوس والموقف</h1>
+            <span>القائد الفعال هو الذي يتشكل بالنمط الذي يناسب المرؤوس والموقف. وهو الذي ينطلق دوما من المصداقية والأمانة، قاصدا مصلحة العمل ومصلحة المرؤوس.</span>
+        </div>
+        <div id="prin3" >
+            <h1>النمط يتشكل</h1>
+            <span>النمط يتشكل مع العمر ونوعية الوظيفة والعمل، فتجد المحاسب يأخذ النمط د، بينما قائد الشرطة يأخذ النمط أ مع الأيام، ويغير نمطه حسب الموقف والناس من حوله.</span>
+        </div>
+        <div id="prin4">
+            <h1>هناك نمط أصيل لكل قائد</h1>
+            <span>رغم أنه مطلوب من القائد أن يتشكل ويغير نمطه حسب الموقف؛ إلا أن هذا التشكل أو التغيير مرهق ويمكن ممارسته على المدى القصير فقط، أما على المدى الطويل فيمارس القائد النمط الأصيل لديه (حيث لا يحتاج إلى تمثيل).</span>
+        </div>
+        <div id="prin5">
+            <h1>معظم الناس نمطهم مختلط</h1>
+            <span>٪15 من الناس فقط لديهم نمط واحد فقط. بينما ۸۵٪ من الناس نمطهم مشكل من نسب مختلفة من الأنماط الأربعة (وهذا ما بيناه في الأنماط التفصيلية أو المختلطة).</span>
+        </div>
+        <div id="prin6">
+            <h1>لا تكن متأرجحا</h1>
+            <span>المتأرجح هو الذي يستعمل نمطين متعارضين مثل (أ وج) في آن واحد، وهذا تصرف غيرفعال. إذا تطلب الموقف الحزم فكن كذلك، ولا تتردد بسبب الجوانب الإنسانية (والتي ستظهر ولا شك عند الأزمات أو الضغوط).</span>
+        </div>
+    </section>
+    <h1 class="mainTitle">ملاحظات على الإختبار</h1>
+    <section id="notes">
+      <div>من التحاليل الممتازة للأنماط القيادية حيث تم تطبيقه وتعديله على أكثر من ۳۰۰ ألف شخص.</div>
+      <div>لا يوجد تحليل للشخصية دقيق ۱۰۰٪ وهذا التحليل يعتبر من القلائل الممتازة حيث نسبة دقته تساوي 89 إلى ۹۱٪.</div>
+      <div>إذا كنت شاكا في النتيجة ومدى انطباقها على شخصيتك فأنت أعلم بنفسك من هذا التحليل (وخاصة أن فيه نسبة خطأ).</div>
+      <div>يتأثر DISC بحالتك النفسية عند حله ، كما يختلف التحليل من بيئة العمل إلى بيئة الأصحاب أو المنزل (فقد يكون مسيطرا في العمل بينما في البيت مسيطر عليه) .</div>
+      <div>يمكن إعادة تقييم DISC على النفس ، ولكن يحبذ ألا تقل الفترة بين كل اختبارين عن 6 شهور، والنتيجة الأفضل والتغيير الواضح لن يظهر في العادة قبل مرور 3 سنوات .</div>
+      <div>تحليل واحد للشخصية لا يكفي لأن كل منها فيه نسبة خطأ ، ولذا فيحبذ تجربة أكثر من تحليل بالإضافة إلى DISC.</div>
+  </section>
+    <h1 class="mainTitle">فيم يستعمل الإختبار</h1>
+    <section id="uses">
+        <div id="spec">
+            <div style="background:#009178;color:white">
+                <img src="./photos/ goals-bro.png">
+                <h1>للإستعمال الشخصي</h1>
+                <span>ستتعرف من خلاله كما رأيت على نمط, والأمور التي يجب أن تتعلمها أوتغيرها, والأعمال التي ترتاح لها ونوعية الناس والقادة الذين تحب أن تتعامل معهم.</span>
+            </div>
+            <div>
+                <img src="./photos/Friendly handshake-bro.png">
+                <h1>للتعامل مع الأنماط</h1>
+                <span>حيث يقترح لك كيف تتعامل مع كل نمط</span>
+            </div>
+        </div>
+        <div class="big">
+            <img src="./photos/Selecting team-cuate.png">
+            <h1>للتوظيف</h1>
+            <span>فإن كنت تحتاج إالي محاسب مثلا فأفضل نمط هو (د) بينما (ج) هو الأفضل لموظفة علاقات عامة, ويصلح (أ) لقيادة المشاريع القصيرة, بينما (ه) هو للقيادة الوسطى, بينما (ب) للقيادة التي تحتاج جماهيرية أو إبداع وتنظير, وأفضل القادة بشكل عام (أ ب) أو (ب أ) أو "المقنع" من أنواع المؤثر أو المتوازن من أنواع المسيطر</span>
+        </div>
+        <div class="big t" style="background:#009178;color:white">
+            <img src="./photos/Team work-bro.png">
+            <h1>لتشكيل الأقسام والإدارات</h1>
+            <span>فمثلا لقسم المحاسبة يحبذ أن يرأسهم شخص من نوع (ه ا) أو ، (أ) وباقي الأفراد كلهم (د) ويحبذ أن يكون أحدهم (ج د) لترطيب العلاقات قليلا. وأما قسم العلاقات العامة فيحبذ أن يرأسهم (ه) أو (ب) وباقي القسم كلهم (ج) مع وجود شخص أو أكثر من نوع (ج د) أو حتى (د) حتى لا يهملوا تفاصيل العمل.</span>
+        </div>
+        <div class="rr" style="background:#009178;color:white" >
+            <img src="./photos/Team work-rafiki.png">
+            <h1>لتشكيل الفرق</h1>
+            <span>فلو شكلنا الفرق كالتالي ستحدث لنا المشاكل المقابلة لكل تشكيل: الجميع (أ ) (صدام مستمر) ، الجميع (ب) (إهمال للتطبيق والتفاصيل) ، الجميع (ج) (تطوير بطيء وإهمال للتفاصيل)، الجميع (د) (علاقات ضعيفة وتطوير محدد) .</span>
+        </div>
+        <div class="rr">
+            <img src="./photos/Finance leaders-bro.png">
+            <h1>للترتيب القيادي</h1>
+            <span>فلا يحبذ أن يرأس (ج) أو (د) فريقا فيه (أ) او (ب) كما يحبذ أن يرأس (ب) فريقا فيه (أ) وليس العكس (حيث أن (ب) يستطيع أن يراعي ويستوعب (أ) وليس العكس) وهكذا.</span>
+        </div>
+    </section>
+    <script src="./js/result2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "cards",
+        grabCursor: true,
+      });
+    </script>
+</body>
+</html>
