@@ -258,7 +258,7 @@ if(data.mode.includes('&')==false&&data.mode2 != 'There is no detailed style'){
         })
     })
 }
-else if(data.mode2 == 'There is no detailed style'){
+else if(data.mode2 == 'There is no detailed style'&&data.mode.includes('&')==true){
     document.querySelector('aside').querySelector('div').style= 'border:0px;background-color:unset';
     document.querySelector('section').querySelector('section').querySelectorAll('div')[8].innerHTML = charactersArr[0]
     document.querySelector('#resBox').querySelectorAll('section')[0].querySelector('h1').innerHTML = `Main Style: ${data.mode}`
