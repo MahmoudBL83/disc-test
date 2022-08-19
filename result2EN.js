@@ -1,5 +1,7 @@
 document.querySelector('#graph').querySelector('table').style= `height:${document.querySelector('#graph').querySelector('table').clientWidth}px`
-
+document.querySelector('article').querySelectorAll('div')[1].addEventListener('click',()=>{
+    location.replace('./registirationEN.html')
+})
 window.addEventListener('resize',()=>{
     document.querySelector('#graph').querySelector('table').style= `height:${document.querySelector('#graph').querySelector('table').clientWidth}px`
 })
@@ -120,6 +122,21 @@ window.addEventListener('resize',()=>{
 
 /*******************************************************************/
 let charactersArr = [],charactersArr2 = [],charactersArr11 = [],charactersArr22 = [],charactersArr33 = []
+if(data.mode.includes('أ')||data.mode.includes('ب')||data.mode.includes('ج')||data.mode.includes('د')){
+    document.querySelectorAll('section').forEach((e)=>{
+        e.classList.add('hidden')
+    })
+    document.querySelectorAll('h1').forEach((e)=>{
+        e.classList.add('hidden')
+    })
+    document.querySelectorAll('header').forEach((e)=>{
+        e.classList.add('hidden')
+    })
+    document.querySelectorAll('nav').forEach((e)=>{
+        e.classList.add('hidden')
+    })
+    document.querySelector('article').classList.remove('hidden')
+}
 if(data.mode == 'أ المسيطر'||data.mode == 'D-Dominant'){
     charactersArr.push('Bold, fast completion, a few relationships except formal ones, prolific, determined, proud of his opinion, intrepid, ruthless at work, his speech is strong, brave, a guide to others, strong, lover of achievement, strong-willed, ambitious, wins at controversy, adventurous, fast and practical, practical, outspoken, creative, the work first, assertive, worried about work, dominant, strong personality, accepts the challenge, pioneer.','Loosening of control, use nice words and courtesy more, delegate more, not rush in making decisions, don\'t get upset if he is not the first, be patient and not rush the results, consultation more, take into account emotions and feelings, giving a greater part of his time to people, commutation of orders, relaxation and not to constantly stress and worry, easing ideal and accept the "best possible", mitigating self-praise, thank the team he works with and attribute the work to them, reduce criticism of others, review important details.','Leadership work, clear, short-term (projects), which are challenging, require firm decisions, practical creativity, and great achievements. does not like to go into detail, he is bored and likes to change work or position every 3-5 years.','Practical, obedient, high loyalty, few spoken, makes a few mistakes and endures continuous hard work (conscientious and steady style).','The best one to lead him is the "influential" style where it can absorb, observe, and give him a space of freedom for movement and decision, while at the same time it can provide him with creative suggestions and necessary theoretic while taking into account his feelings.','Respect, praise, strong commitment to agreements with him, defer advice and suggestions to a time of calm and leisure (not during work pressure), work hard and accomplish greatly with him, patience with his orders and "cruelty", he means the interest.','He likes to emerge, his orders are direct, he asks a lot to understand, and his decisions are firm and fast<hr>Keen to win, attributes success to himself and talks a lot about the failure of his predecessors<hr>Enjoys taking on new responsibilities, wants to get quick results<hr>Knows what he wants and seeks for it, does consider feelings too much, centralized, gets very upset when he fails<hr>His relationships are not deep (but are often for interests), marginalizing the role of those around him, interrupting the talk<hr>Works on more than one project at the same time, imposes his opinion and does not change it easily<hr>His personality is a tyrant of those around him, (and therefor they fear him more than they love him).')
     if(data.mode2 == 'Dominant'){
