@@ -102,12 +102,22 @@ body{
 }
 
 #r1 #reg h1{
-    color:var(--main);
-    border-bottom:1px solid black;
-    padding-bottom:20px;
+    color:rgba(229, 126, 37, 1);
     padding-top:20px;
     margin-top:0px;
-    background-color: snow;
+    font-size:2.2rem;
+}
+
+@media(max-width:915px){
+    #r1 #reg h1{
+        font-size:2rem;
+    }
+}
+
+@media(max-width:519px){
+    #r1 #reg h1{
+        font-size:1.5rem;
+    }
 }
 
 #r1 #emailAddress{
