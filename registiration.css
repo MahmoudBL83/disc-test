@@ -1,9 +1,14 @@
+
 :root{
     --main:#e57e25;
     --sec:#524438;
     --third:#B9A89A;
     --forth:#0071dc;
     --fifth:#009178;
+}
+
+html{
+    overflow-x: hidden;
 }
 
 body{
@@ -13,6 +18,8 @@ body{
     /*font-family: 'Cairo', sans-serif;*/
     font-family: 'Almarai', sans-serif;
     background-color: snow;
+    overflow-x: hidden;
+    width:100%;
 }
 #r1 form{
     width:50%;
@@ -115,6 +122,8 @@ body{
     border:0px;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
+
+/**************************************/
 
 @media(max-width:677px){
     #r1 form{

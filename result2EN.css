@@ -343,6 +343,7 @@ table {
     flex-wrap:wrap;
     gap:10px;
     flex-direction: row;
+    margin-bottom: 100px;
 }
 
 #uses  div{
@@ -353,17 +354,20 @@ table {
     color:white;
     padding:30px;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-    color:#524438
+    color:#524438;
+}
+
+#uses div:hover img{
+    transform: scale(1.1);
 }
 
 #uses img{
     position: absolute;
     right:0;
     height:100%;
-    /*top:50%;
-    transform: translateY(-50%);*/
     bottom:0;
     opacity: 0.07;
+    transition: 0.6s;
 }
 #uses span{
     display: inline-block;
@@ -412,11 +416,11 @@ hr{
     background-position-x: center;
     background-position-y: top;
     font-size:1.4rem;
+    transition: 0.6s;
 }
 
 #notes > div:hover{
-    background-color: transparent;
-    color:black;
+    transform: rotate(-2deg);
 }
 
 /*************************************************************/
