@@ -146,7 +146,7 @@ if(data.mode == 'ب المؤثر'||data.mode == 'I-Influential'){
     if(data.mode2 == 'Advisor'){
         charactersArr2.push('An intense tendency for relationships, encouragement and motivation, eager to love, benefit and advise people, but at the expense of achievement and results, goes into details that have to do with people\'s problems and satisfaction and likes theoretical, planning and creativity as well.','Fit for mass leadership (in the social, family and educational fields in particular) and creative in these fields.')
     }
-    if(data.mode2 == 'Vacillating '){
+    if(data.mode2 == 'Vacillating'){
         charactersArr2.push('Influential, persuasive, lovable and social, but sometimes excessive at the expense of work and achievement, which makes him stop, enter details, be firm and does not take into account feelings, which makes people annoyed with him, so he returns to try to win their love and satisfaction, thereby the work escapes and thus remains vacillating between the two styles.','Fit for senior leadership in works that does not tolerate errors, as well as for short-term projects provided that he learns balance.')
     }
 }
@@ -355,7 +355,6 @@ document.querySelector('header').querySelector('h1').innerHTML+=data.name;
 
 document.querySelector('#res2').querySelector('div').querySelectorAll('div')[0].innerHTML = charactersArr2[0]
 document.querySelector('#res2').querySelector('div').querySelectorAll('div')[1].innerHTML = charactersArr2[1]
-
 
 function r(){
     document.querySelector('#graph').style = `height:${document.querySelector('#table').clientHeight}px`

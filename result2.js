@@ -239,9 +239,25 @@ if(data.mode=='ب,د'){
     charactersArr22.push('راضي، قوي الملاحظة، حريص في اختيار علاقاته، جاد في عمله، حريص، آراؤه واضحة، منطقي، قنوع، كلامه هادئ، حذر، معتمد على نفسه، عملي، محب للأصالة، حريص على العمل، متقن، منظم، قليل الأخطاء، متدرج وعملي، رسمي، غير فضولي، متواضع، يفضل الخصوصية، حيادي، قليل الأخطاء، واعي، نادر الأخطاء، منضبط، راقي.','فن بناء العلاقات وإصلاحها ، مزيد من المرح ، الإبداع ، التخطيط الاستراتيجي، بناء فريق العمل ، الاتصال ، التحفيز، التنظير والتفكير الابتكاري ، يحتاج أن يفكر في القضايا والمشاكل العامة والكبيرة ويخفف من التركيز على التفاصيل، يحتاج أن يخفف من المثالية ، وأن يتحمل أخطاء الناس ، ويكون مرنا معهم، ويحتاج ألا يقاوم التغيير','الأمور العملية التفصيلية التي فيها احتكاك قليل بالناس، لا يميل إلى المجاملة ، ويحب الصراحة والوضوح والنظام الواضح واللوائح الدقيقة المفصلة ، لا مانع لديه ألا يكون مسؤولا، ولديه ثبات بحيث يصبر على نفس العمل لفترات طويلة','يحب أن يقود أو يعمل مع أناس من نمطه فقط ، ولا يتحمل المؤثر إطلاقا حيث يختلف معه دوما ، ويصعب عليه أن يقود المسيطر، ولكنه قادر أن يقود المحافط إن احتاج لذلك','أفضل من يقوده هو المسيطر، ولكن كل الأنماط يمكن أن تقوده','الوضوح والنظام واللوائح والتعليمات المحددة، وإعطاؤه أعمال تفصيلية عملية، وإبعاده عن الأمور التي تحتاج لعلاقات واحتكاك بالناس، الاعتماد عليه والوثوق به في الأمور التفصيلية','مبالغ في الترتيب والتنظيم ، ينزعج جدا عند الخطأ.<hr>يحب الهدوء ، ينتقد جودة العمل باستمرار.<hr>لا يبني علاقات جديدة بسهولة.<hr>لا يحب المقاطعات وتوتره ، يحب المعايير والمقاييس كثيرا ، يفضل المهارات العملية وليست النظرية.<hr>ينزعج ويتوتر بشدة إذا حدث خلاف حوله ولكنه يميل للعزلة عندها.')
 }
 /***************************************/
-if(data.mode.includes(',')==false){
+if(data.mode.includes(',')==false&&data.mode2!='لا يوجد لك نمط تفصيلي'){
     document.querySelector('section').querySelector('section').querySelectorAll('div')[8].innerHTML = charactersArr[0]
     document.querySelector('#res2').classList.remove('hidden')
+    document.querySelector('#resBox').querySelectorAll('section')[0].querySelector('h1').innerHTML = `النمط الرئيسي: ${data.mode}`
+    document.querySelector('#resBox').querySelectorAll('section')[1].querySelector('h1').innerHTML = `النمط الفرعي: ${data.mode2}`
+    document.querySelectorAll('.common').forEach((elment)=>{
+        elment.querySelector('aside').querySelectorAll('div').forEach((e,i)=>{
+            e.addEventListener('click',(evt)=>{
+                evt.target.parentElement.querySelectorAll('div').forEach((elem,index) =>{
+                    elem.style=''
+                })
+                evt.target.parentElement.parentElement.querySelectorAll('div')[7].innerHTML = charactersArr[i]
+                evt.target.style= 'border:0px;background-color:unset';
+            })
+        })
+    })
+}
+else if(data.mode.includes(',')==true&&data.mode2=='لا يوجد لك نمط تفصيلي'){
+    document.querySelector('section').querySelector('section').querySelectorAll('div')[8].innerHTML = charactersArr[0]
     document.querySelector('#resBox').querySelectorAll('section')[0].querySelector('h1').innerHTML = `النمط الرئيسي: ${data.mode}`
     document.querySelector('#resBox').querySelectorAll('section')[1].querySelector('h1').innerHTML = `النمط الفرعي: ${data.mode2}`
     document.querySelectorAll('.common').forEach((elment)=>{
