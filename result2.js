@@ -4,7 +4,7 @@ window.addEventListener('resize',()=>{
 })
 document.querySelector('#signOut').addEventListener('click',()=>{
     localStorage.removeItem('DISCData');
-    location.replace('./index.html')
+    location.replace('./registiration.html')
 })
 /****************************************************/
 if(localStorage.getItem('DISCData') == null){

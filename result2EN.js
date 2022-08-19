@@ -240,10 +240,27 @@ if(data.mode=='I&C'){
     charactersArr22.push('Satisfied, strong observant, eager in choosing his relationships, serious in his work, Eager, his opinions are clear, logical, contented, quiet speech, cautious, self-reliant, practical, lover of authenticity, eager to work, accurate, orderly, a few mistakes, gradual and practical, formal, uncurious, humble, prefers privacy, neutral, a few mistakes, conscious, rare mistakes, disciplined, classy.','The art of building and fixing relationships, more fun, creativity, strategic planning, team building, communication, motivation, theorizing and innovative thinking, need to think about general and large issues and problems and relieve the focus on detail, needs to alleviate the ideal, endure people\'s mistakes, be flexible with them, and need not resist change.','Detailed practical matters in which little contact with people, he does not tend to be courtesy, likes frankness, clarity, clear system, detailed precise regulations, has no objection to being irresponsible, has a constant so that he is patient for the same work for long periods.','He likes to lead or work with people of his style only, and he doesn\'t bear the Influential at all where he always disagrees with him, and he\'s hard to lead the dominant, but he can lead the Steady if he needs to.','The best one to lead him is dominant, but all styles can lead him.','Clarity, order, regulations and specific instructions, give him practical detailed work, keep him away from things that need relationships and contact with people, rely on him and trust him in detailed matters.','Exaggerated in order and organization, very upset when wrong.<hr>Loves calm, constantly criticizes the quality of work.<hr>Doesn\'t build new relationships easily.<hr>Doesn\'t like interruptions and tension, he likes norms and standards very much, prefers practical skills and not theory.<hr>He is deeply disturbed and stressed if there is a dispute around him, but he tends to isolate then.')
 }
 /***************************************/
-if(data.mode.includes('&')==false){
+if(data.mode.includes('&')==false&&data.mode2 != 'There is no detailed style'){
     document.querySelector('aside').querySelector('div').style= 'border:0px;background-color:unset';
     document.querySelector('section').querySelector('section').querySelectorAll('div')[8].innerHTML = charactersArr[0]
     document.querySelector('#res2').classList.remove('hidden')
+    document.querySelector('#resBox').querySelectorAll('section')[0].querySelector('h1').innerHTML = `Main Style: ${data.mode}`
+    document.querySelector('#resBox').querySelectorAll('section')[1].querySelector('h1').innerHTML = `Detailed Style: ${data.mode2}`
+    document.querySelectorAll('.common').forEach((elment)=>{
+        elment.querySelector('aside').querySelectorAll('div').forEach((e,i)=>{
+            e.addEventListener('click',(evt)=>{
+                evt.target.parentElement.querySelectorAll('div').forEach((elem,index) =>{
+                    elem.style=''
+                })
+                evt.target.parentElement.parentElement.querySelectorAll('div')[7].innerHTML = charactersArr[i]
+                evt.target.style= 'border:0px;background-color:unset';
+            })
+        })
+    })
+}
+else if(data.mode2 == 'There is no detailed style'){
+    document.querySelector('aside').querySelector('div').style= 'border:0px;background-color:unset';
+    document.querySelector('section').querySelector('section').querySelectorAll('div')[8].innerHTML = charactersArr[0]
     document.querySelector('#resBox').querySelectorAll('section')[0].querySelector('h1').innerHTML = `Main Style: ${data.mode}`
     document.querySelector('#resBox').querySelectorAll('section')[1].querySelector('h1').innerHTML = `Detailed Style: ${data.mode2}`
     document.querySelectorAll('.common').forEach((elment)=>{
