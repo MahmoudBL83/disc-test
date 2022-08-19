@@ -407,7 +407,7 @@ hr{
 
 #notes > div{
     flex-basis:calc(33% - 85px);
-    background-image: url(../Photos/card-removebg-preview.png);
+    background-image: url(./card-removebg-preview.png);
     color:black;
     padding:150px 40px 40px 40px;
     background-size: cover;
