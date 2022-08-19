@@ -135,7 +135,7 @@ header{
     display:flex;
     flex-direction: column;
     padding:135px 10% 50px 10%;
-    background-image: url(../Photos/Aptitude-Employment-Tests-Prep.jpg);
+    background-image: url(./Aptitude-Employment-Tests-Prep.jpg);
     background-size: cover;
     position: relative;
     justify-content: center;
