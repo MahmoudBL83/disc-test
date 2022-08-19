@@ -256,7 +256,7 @@ if(data.mode.includes(',')==false&&data.mode2!='لا يوجد لك نمط تفص
         })
     })
 }
-else if(data.mode.includes(',')==true&&data.mode2=='لا يوجد لك نمط تفصيلي'){
+else if(data.mode.includes(',')==false&&data.mode2=='لا يوجد لك نمط تفصيلي'){
     document.querySelector('section').querySelector('section').querySelectorAll('div')[8].innerHTML = charactersArr[0]
     document.querySelector('#resBox').querySelectorAll('section')[0].querySelector('h1').innerHTML = `النمط الرئيسي: ${data.mode}`
     document.querySelector('#resBox').querySelectorAll('section')[1].querySelector('h1').innerHTML = `النمط الفرعي: ${data.mode2}`
