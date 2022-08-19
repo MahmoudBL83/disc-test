@@ -67,7 +67,7 @@ navs[6].addEventListener('click',()=>{
     location.replace('https://www.iptc.com.sa/en/contacts/')
 })
 navs[7].addEventListener('click',()=>{
-    location.replace('../registiration.html')
+    location.replace('./registiration.html')
 })
 
 /**************************************************************/
@@ -137,7 +137,7 @@ asides[6].addEventListener('click',()=>{
     location.replace('https://www.iptc.com.sa/en/contacts/')
 })
 asides[7].addEventListener('click',()=>{
-    location.replace('../registiration.html')
+    location.replace('./registiration.html')
 })
 
 document.querySelector('.fa-bars').addEventListener('click',(e)=>{
