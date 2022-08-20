@@ -116,9 +116,7 @@ $(document).ready(function(){
                 }
             })
             getData();
-            setTimeout(()=>{
-                location.replace('./resultEN.html')
-            },10000)
+            location.replace('./resultEN.html')
         }
         else{
             alert('You are not signed')
