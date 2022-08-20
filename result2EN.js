@@ -2,6 +2,66 @@ document.querySelector('#graph').querySelector('table').style= `height:${documen
 document.querySelector('article').querySelectorAll('div')[1].addEventListener('click',()=>{
     location.replace('./registirationEN.html')
 })
+
+document.querySelector('nav').querySelector('i').addEventListener('click',mobileNav)
+
+function mobileNav(){
+    if(window.innerWidth < 1065&&window.innerWidth>=470){
+            if(document.querySelector('nav').querySelector('div').style.display=='')
+            document.querySelector('nav').querySelectorAll('div').forEach((elm,i)=>{
+                if(i==0)
+                    elm.style='display:block!important;margin-top: 390px!important';
+                else
+                    elm.style='display:block!important';
+            })
+            else
+            document.querySelector('nav').querySelectorAll('div').forEach((elm,i)=>{
+                if(i==0)
+                    elm.style='margin-top: 390px!important';
+                else
+                    elm.style='';
+            })
+    }
+    else if(window.innerWidth<470&&window.innerWidth>=357){
+            if(document.querySelector('nav').querySelector('div').style.display=='')
+            document.querySelector('nav').querySelectorAll('div').forEach((elm,i)=>{
+                if(i==0)
+                    elm.style='display:block!important;margin-top: 379px!important';
+                else
+                    elm.style='display:block!important';
+            })
+            else
+            document.querySelector('nav').querySelectorAll('div').forEach((elm,i)=>{
+                if(i==0)
+                    elm.style='margin-top: 379px!important';
+                else
+                    elm.style='';
+        })
+    }
+    else if(window.innerWidth<357){
+            if(document.querySelector('nav').querySelector('div').style.display=='')
+            document.querySelector('nav').querySelectorAll('div').forEach((elm,i)=>{
+                if(i==0)
+                    elm.style='display:block!important;margin-top: 441px!important';
+                else
+                    elm.style='display:block!important';
+            })
+            else
+            document.querySelector('nav').querySelectorAll('div').forEach((elm,i)=>{
+                if(i==0)
+                    elm.style='margin-top: 441px!important';
+                else
+                    elm.style='';
+            })
+    }
+    else if(window.innerWidth >= 1065){
+        document.querySelector('nav').querySelectorAll('div').forEach((elm,i)=>{
+            if(i==0)
+                elm.style='';
+        })
+    }
+}
+
 window.addEventListener('resize',()=>{
     document.querySelector('#graph').querySelector('table').style= `height:${document.querySelector('#graph').querySelector('table').clientWidth}px`
 })
@@ -122,7 +182,7 @@ window.addEventListener('resize',()=>{
 
 /*******************************************************************/
 let charactersArr = [],charactersArr2 = [],charactersArr11 = [],charactersArr22 = [],charactersArr33 = []
-if(data.mode.includes('أ')||data.mode.includes('ب')||data.mode.includes('ج')||data.mode.includes('د')){
+if(data.mode.includes('أ')||data.mode.includes('ب')||data.mode.includes('ج')||data.mode.includes('د')||data.mode.includes('ه')){
     document.querySelectorAll('section').forEach((e)=>{
         e.classList.add('hidden')
     })

@@ -3,8 +3,74 @@ document.querySelector('article').querySelectorAll('div')[1].addEventListener('c
     location.replace('./registiration.html')
 })
 
+document.querySelector('nav').querySelector('i').addEventListener('click',mobileNav)
+
+function mobileNav(){
+    if(window.innerWidth < 1065&&window.innerWidth>470){
+            if(document.querySelector('nav').querySelector('div').style.display=='')
+            document.querySelector('nav').querySelectorAll('div').forEach((elm,i)=>{
+                if(i==0)
+                    elm.style='display:block!important;margin-top: 459px!important';
+                else
+                    elm.style='display:block!important';
+            })
+            else
+            document.querySelector('nav').querySelectorAll('div').forEach((elm,i)=>{
+                if(i==0)
+                    elm.style='margin-top: 459px!important';
+                else
+                    elm.style='';
+            })
+    }
+    else if(window.innerWidth<470&&window.innerWidth>=357){
+            if(document.querySelector('nav').querySelector('div').style.display=='')
+            document.querySelector('nav').querySelectorAll('div').forEach((elm,i)=>{
+                if(i==0)
+                    elm.style='display:block!important;margin-top: 449px!important';
+                else
+                    elm.style='display:block!important';
+            })
+            else
+            document.querySelector('nav').querySelectorAll('div').forEach((elm,i)=>{
+                if(i==0)
+                    elm.style='margin-top: 449px!important';
+                else
+                    elm.style='';
+        })
+    }
+    else if(window.innerWidth<357){
+            if(document.querySelector('nav').querySelector('div').style.display=='')
+            document.querySelector('nav').querySelectorAll('div').forEach((elm,i)=>{
+                if(i==0)
+                    elm.style='display:block!important;margin-top: 531px!important';
+                else
+                    elm.style='display:block!important';
+            })
+            else
+            document.querySelector('nav').querySelectorAll('div').forEach((elm,i)=>{
+                if(i==0)
+                    elm.style='margin-top: 531px!important';
+                else
+                    elm.style='';
+            })
+    }
+    else if(window.innerWidth >= 1065){
+        document.querySelector('nav').querySelectorAll('div').forEach((elm,i)=>{
+            if(i==0)
+                elm.style='';
+        })
+    }
+}
+
+
 window.addEventListener('resize',()=>{
     document.querySelector('#graph').querySelector('table').style= `height:${document.querySelector('#graph').querySelector('table').clientWidth}px`
+    if(window.innerWidth >= 1065){
+        document.querySelector('nav').querySelectorAll('div').forEach((elm,i)=>{
+            if(i==0)
+                elm.style='';
+        })
+    }
 })
 document.querySelector('#signOut').addEventListener('click',()=>{
     localStorage.removeItem('DISCData');
