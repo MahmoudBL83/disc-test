@@ -261,8 +261,8 @@ if(data.mode.includes('&')==false&&data.mode2 != 'There is no detailed style'){
     document.querySelector('aside').querySelector('div').style= 'border:0px;background-color:unset';
     document.querySelector('section').querySelector('section').querySelectorAll('div')[8].innerHTML = charactersArr[0]
     document.querySelector('#res2').classList.remove('hidden')
-    document.querySelector('#resBox').querySelectorAll('section')[0].querySelector('h1').innerHTML = `Main Style: ${data.mode}`
-    document.querySelector('#resBox').querySelectorAll('section')[1].querySelector('h1').innerHTML = `Detailed Style: ${data.mode2}`
+    document.querySelector('#resBox').querySelectorAll('section')[0].querySelector('h1').innerHTML = `Main Style: <span style='color:#ffe2b4;text-shadow:0 0 2px black;'>${data.mode}</span>`
+    document.querySelector('#resBox').querySelectorAll('section')[1].querySelector('h1').innerHTML = `Detailed Style: <span style='color:#ffe2b4;text-shadow:0 0 2px black;'>${data.mode2}</span>`
     document.querySelectorAll('.common').forEach((elment)=>{
         elment.querySelector('aside').querySelectorAll('div').forEach((e,i)=>{
             e.addEventListener('click',(evt)=>{
@@ -278,8 +278,8 @@ if(data.mode.includes('&')==false&&data.mode2 != 'There is no detailed style'){
 else if(data.mode2 == 'There is no detailed style'&&data.mode.includes('&')==false){
     document.querySelector('aside').querySelector('div').style= 'border:0px;background-color:unset';
     document.querySelector('section').querySelector('section').querySelectorAll('div')[8].innerHTML = charactersArr[0]
-    document.querySelector('#resBox').querySelectorAll('section')[0].querySelector('h1').innerHTML = `Main Style: ${data.mode}`
-    document.querySelector('#resBox').querySelectorAll('section')[1].querySelector('h1').innerHTML = `Detailed Style: ${data.mode2}`
+    document.querySelector('#resBox').querySelectorAll('section')[0].querySelector('h1').innerHTML = `Main Style: <span style='color:#ffe2b4;text-shadow:0 0 2px black;'>${data.mode}</span>`
+    document.querySelector('#resBox').querySelectorAll('section')[1].querySelector('h1').innerHTML = `Detailed Style: <span style='color:#ffe2b4;text-shadow:0 0 2px black;'>${data.mode2}</span>`
     document.querySelectorAll('.common').forEach((elment)=>{
         elment.querySelector('aside').querySelectorAll('div').forEach((e,i)=>{
             e.addEventListener('click',(evt)=>{
@@ -294,7 +294,7 @@ else if(data.mode2 == 'There is no detailed style'&&data.mode.includes('&')==fal
 }
 else if(data.mode.length==3){
     document.querySelectorAll('.common')[0].querySelectorAll('div')[7].innerHTML = charactersArr11[0]
-    document.querySelectorAll('.common')[0].querySelector('h1').innerHTML = `1st Main Style: ${data.mode.slice(0,1)}`
+    document.querySelectorAll('.common')[0].querySelector('h1').innerHTML = `1st Main Style: <span style='color:#ffe2b4;text-shadow:0 0 2px black;'>${data.mode.slice(0,1)}</span>`
     document.querySelectorAll('.common')[0].querySelector('aside').querySelectorAll('div').forEach((e,i)=>{
         e.addEventListener('click',(evt)=>{
             evt.target.parentElement.querySelectorAll('div').forEach((elem,index) =>{
@@ -307,7 +307,7 @@ else if(data.mode.length==3){
     let clone = document.querySelector('.common').cloneNode(true)
     document.querySelector('.res').appendChild(clone)
     document.querySelectorAll('.common')[1].querySelectorAll('div')[7].innerHTML = charactersArr22[0]
-    document.querySelectorAll('.common')[1].querySelector('h1').innerHTML = `2nd Main Style: ${data.mode.slice(2)}`
+    document.querySelectorAll('.common')[1].querySelector('h1').innerHTML = `2nd Main Style: <span style='color:#ffe2b4;text-shadow:0 0 2px black;'>${data.mode.slice(2)}</span>`
     document.querySelectorAll('.common')[1].querySelector('aside').querySelectorAll('div').forEach((e,i)=>{
         e.addEventListener('click',(evt)=>{
             evt.target.parentElement.querySelectorAll('div').forEach((elem,index) =>{
@@ -323,7 +323,7 @@ else if(data.mode.length==3){
 }
 else if(data.mode.length==5){
     document.querySelectorAll('.common')[0].querySelectorAll('div')[7].innerHTML = charactersArr11[0]
-    document.querySelectorAll('.common')[0].querySelector('h1').innerHTML = `1st Main Style: ${data.mode.slice(0,1)}`
+    document.querySelectorAll('.common')[0].querySelector('h1').innerHTML = `1st Main Style: <span style='color:#ffe2b4;text-shadow:0 0 2px black;'>${data.mode.slice(0,1)}</span>`
     document.querySelectorAll('.common')[0].querySelector('aside').querySelectorAll('div').forEach((e,i)=>{
         e.addEventListener('click',(evt)=>{
             evt.target.parentElement.querySelectorAll('div').forEach((elem,index) =>{
@@ -336,7 +336,7 @@ else if(data.mode.length==5){
     let clone = document.querySelector('.common').cloneNode(true)
     document.querySelector('.res').appendChild(clone)
     document.querySelectorAll('.common')[1].querySelectorAll('div')[7].innerHTML = charactersArr22[0]
-    document.querySelectorAll('.common')[1].querySelector('h1').innerHTML = `2nd Main Style: ${data.mode.slice(2,3)}`
+    document.querySelectorAll('.common')[1].querySelector('h1').innerHTML = `2nd Main Style: <span style='color:#ffe2b4;text-shadow:0 0 2px black;'>${data.mode.slice(2,3)}</span>`
     document.querySelectorAll('.common')[1].querySelector('aside').querySelectorAll('div').forEach((e,i)=>{
         e.addEventListener('click',(evt)=>{
             evt.target.parentElement.querySelectorAll('div').forEach((elem,index) =>{
@@ -349,7 +349,7 @@ else if(data.mode.length==5){
     let clone2 = document.querySelector('.common').cloneNode(true)
     document.querySelector('.res').appendChild(clone2)
     document.querySelectorAll('.common')[2].querySelectorAll('div')[7].innerHTML = charactersArr33[0]
-    document.querySelectorAll('.common')[2].querySelector('h1').innerHTML = `3rd Main Style: ${data.mode.slice(4)}`
+    document.querySelectorAll('.common')[2].querySelector('h1').innerHTML = `3rd Main Style: <span style='color:#ffe2b4;text-shadow:0 0 2px black;'>${data.mode.slice(4)}</span>`
     document.querySelectorAll('.common')[2].querySelector('aside').querySelectorAll('div').forEach((e,i)=>{
         e.addEventListener('click',(evt)=>{
             evt.target.parentElement.querySelectorAll('div').forEach((elem,index) =>{

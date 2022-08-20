@@ -261,8 +261,8 @@ if(data.mode=='ب,د'){
 if(data.mode.includes(',')==false&&data.mode2!='لا يوجد لك نمط تفصيلي'){
     document.querySelector('section').querySelector('section').querySelectorAll('div')[8].innerHTML = charactersArr[0]
     document.querySelector('#res2').classList.remove('hidden')
-    document.querySelector('#resBox').querySelectorAll('section')[0].querySelector('h1').innerHTML = `النمط الرئيسي: ${data.mode}`
-    document.querySelector('#resBox').querySelectorAll('section')[1].querySelector('h1').innerHTML = `النمط الفرعي: ${data.mode2}`
+    document.querySelector('#resBox').querySelectorAll('section')[0].querySelector('h1').innerHTML = `النمط الرئيسي: <span style='color:#ffe2b4;text-shadow:0 0 2px black;'>${data.mode}</span>`
+    document.querySelector('#resBox').querySelectorAll('section')[1].querySelector('h1').innerHTML = `النمط الفرعي: <span style='color:#ffe2b4;text-shadow:0 0 2px black;'>${data.mode2}</span>`
     document.querySelectorAll('.common').forEach((elment)=>{
         elment.querySelector('aside').querySelectorAll('div').forEach((e,i)=>{
             e.addEventListener('click',(evt)=>{
@@ -277,8 +277,8 @@ if(data.mode.includes(',')==false&&data.mode2!='لا يوجد لك نمط تفص
 }
 else if(data.mode.includes(',')==false&&data.mode2=='لا يوجد لك نمط تفصيلي'){
     document.querySelector('section').querySelector('section').querySelectorAll('div')[8].innerHTML = charactersArr[0]
-    document.querySelector('#resBox').querySelectorAll('section')[0].querySelector('h1').innerHTML = `النمط الرئيسي: ${data.mode}`
-    document.querySelector('#resBox').querySelectorAll('section')[1].querySelector('h1').innerHTML = `النمط الفرعي: ${data.mode2}`
+    document.querySelector('#resBox').querySelectorAll('section')[0].querySelector('h1').innerHTML = `النمط الرئيسي: <span style='color:#ffe2b4;text-shadow:0 0 2px black;'>${data.mode}</span>`
+    document.querySelector('#resBox').querySelectorAll('section')[1].querySelector('h1').innerHTML = `النمط الفرعي: <span style='color:#ffe2b4;text-shadow:0 0 2px black;'>${data.mode2}</span>`
     document.querySelectorAll('.common').forEach((elment)=>{
         elment.querySelector('aside').querySelectorAll('div').forEach((e,i)=>{
             e.addEventListener('click',(evt)=>{
@@ -293,7 +293,7 @@ else if(data.mode.includes(',')==false&&data.mode2=='لا يوجد لك نمط �
 }
 else if(data.mode.length==3){
     document.querySelectorAll('.common')[0].querySelectorAll('div')[7].innerHTML = charactersArr11[0]
-    document.querySelectorAll('.common')[0].querySelector('h1').innerHTML = `النمط الرئيسي الأول: ${data.mode.slice(0,1)}`
+    document.querySelectorAll('.common')[0].querySelector('h1').innerHTML = `النمط الرئيسي الأول: <span style='color:#ffe2b4;text-shadow:0 0 2px black;'>${data.mode.slice(0,1)}</span>`
     document.querySelectorAll('.common')[0].querySelector('aside').querySelectorAll('div').forEach((e,i)=>{
         e.addEventListener('click',(evt)=>{
             evt.target.parentElement.querySelectorAll('div').forEach((elem,index) =>{
@@ -306,7 +306,7 @@ else if(data.mode.length==3){
     let clone = document.querySelector('.common').cloneNode(true)
     document.querySelector('.res').appendChild(clone)
     document.querySelectorAll('.common')[1].querySelectorAll('div')[7].innerHTML = charactersArr22[0]
-    document.querySelectorAll('.common')[1].querySelector('h1').innerHTML = `النمط الرئيسي الثاني: ${data.mode.slice(2)}`
+    document.querySelectorAll('.common')[1].querySelector('h1').innerHTML = `النمط الرئيسي الثاني: <span style='color:#ffe2b4;text-shadow:0 0 2px black;'>${data.mode.slice(2)}</span>`
     document.querySelectorAll('.common')[1].querySelector('aside').querySelectorAll('div').forEach((e,i)=>{
         e.addEventListener('click',(evt)=>{
             evt.target.parentElement.querySelectorAll('div').forEach((elem,index) =>{
@@ -322,7 +322,7 @@ else if(data.mode.length==3){
 }
 else if(data.mode.length==5){
     document.querySelectorAll('.common')[0].querySelectorAll('div')[7].innerHTML = charactersArr11[0]
-    document.querySelectorAll('.common')[0].querySelector('h1').innerHTML = `النمط الرئيسي الأول: ${data.mode.slice(0,1)}`
+    document.querySelectorAll('.common')[0].querySelector('h1').innerHTML = `النمط الرئيسي الأول: <span style='color:#ffe2b4;text-shadow:0 0 2px black;'>${data.mode.slice(0,1)}</span>`
     document.querySelectorAll('.common')[0].querySelector('aside').querySelectorAll('div').forEach((e,i)=>{
         e.addEventListener('click',(evt)=>{
             evt.target.parentElement.querySelectorAll('div').forEach((elem,index) =>{
@@ -335,7 +335,7 @@ else if(data.mode.length==5){
     let clone = document.querySelector('.common').cloneNode(true)
     document.querySelector('.res').appendChild(clone)
     document.querySelectorAll('.common')[1].querySelectorAll('div')[7].innerHTML = charactersArr22[0]
-    document.querySelectorAll('.common')[1].querySelector('h1').innerHTML = `النمط الرئيسي الثاني: ${data.mode.slice(2,3)}`
+    document.querySelectorAll('.common')[1].querySelector('h1').innerHTML = `النمط الرئيسي الثاني: <span style='color:#ffe2b4;text-shadow:0 0 2px black;'>${data.mode.slice(2,3)}</span>`
     document.querySelectorAll('.common')[1].querySelector('aside').querySelectorAll('div').forEach((e,i)=>{
         e.addEventListener('click',(evt)=>{
             evt.target.parentElement.querySelectorAll('div').forEach((elem,index) =>{
@@ -348,7 +348,7 @@ else if(data.mode.length==5){
     let clone2 = document.querySelector('.common').cloneNode(true)
     document.querySelector('.res').appendChild(clone2)
     document.querySelectorAll('.common')[2].querySelectorAll('div')[7].innerHTML = charactersArr33[0]
-    document.querySelectorAll('.common')[2].querySelector('h1').innerHTML = `النمط الرئيسي الثالث: ${data.mode.slice(4)}`
+    document.querySelectorAll('.common')[2].querySelector('h1').innerHTML = `النمط الرئيسي الثالث: <span style='color:#ffe2b4;text-shadow:0 0 2px black;'>${data.mode.slice(4)}</span>`
     document.querySelectorAll('.common')[2].querySelector('aside').querySelectorAll('div').forEach((e,i)=>{
         e.addEventListener('click',(evt)=>{
             evt.target.parentElement.querySelectorAll('div').forEach((elem,index) =>{
