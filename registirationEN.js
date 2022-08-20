@@ -97,28 +97,32 @@ for(let i=2;i<30;i++){
 ////////////////////////////////////////////////////////////////////////
 //sending the form to google//
 
-$('#bootstrapForm').submit(async function (event) {
-    event.preventDefault()
-    let ui = await fetch(`https://mahmoudbl.pythonanywhere.com/?password=${document.querySelector('#r1').querySelectorAll('input')[2].value}`)
-    let yi = await ui.json()
-    console.log(yi)
-    if(yi[1]){
-    var extraData = {}
-        $('#bootstrapForm').ajaxSubmit({
-            header:{
-                'X-Content-Type-Options': 'nosniff'
-            },
-            data: extraData,
-            dataType: 'jsonp',
-            error: function () {  
-                console.log('error')
-            }
-        })
-        getData();
-        location.replace('./resultEN.html')
-    }
-    else{
-        alert('You are not signed')
-        document.querySelector('#r2').classList.add('hidden')
-    }
-})
+$(document).ready(function(){
+    $('#bootstrapForm').submit(async function (event) {
+        event.preventDefault()
+        let ui = await fetch(`https://mahmoudbl.pythonanywhere.com/?password=${document.querySelector('#r1').querySelectorAll('input')[2].value}`)
+        let yi = await ui.json()
+        console.log(yi)
+        if(yi[1]){
+        var extraData = {}
+            $('#bootstrapForm').ajaxSubmit({
+                header:{
+                    'X-Content-Type-Options': 'nosniff'
+                },
+                data: extraData,
+                dataType: 'jsonp',
+                error: function () {  
+                    console.log('error')
+                }
+            })
+            getData();
+            setTimeout(()=>{
+                location.replace('./resultEN.html')
+            },10000)
+        }
+        else{
+            alert('You are not signed')
+            document.querySelector('#r2').classList.add('hidden')
+        }
+    })
+});
