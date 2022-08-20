@@ -577,5 +577,14 @@
         grabCursor: true,
       });
     </script>
+    <script>
+      let y = document.querySelector('nav').querySelectorAll('div')
+      let sections = document.querySelectorAll('.mainTitle')
+      y.forEach((e,i)=>{
+        e.addEventListener('click',()=>{
+          sections[i].scrollIntoView({'behavior':"smooth"})
+        })
+      })
+    </script>
 </body>
 </html>
