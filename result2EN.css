@@ -1,5 +1,5 @@
 :root{
-    --main:#f39200;
+    --main:rgba(229, 126, 37, 1);
     --sec:#524438;
     --third:#B9A89A;
     --forth:#0071dc;
@@ -109,7 +109,7 @@ nav>div:hover{
 
 nav span{
     position: absolute;
-    left:10%;
+    right:10%;
     background-color: var(--sec);
     color:snow;
     height: 100%;
@@ -122,7 +122,7 @@ nav span{
 
 nav img{
     position: absolute;
-    right:10%;
+    left:10%;
     height:60px;
 }
 
@@ -135,7 +135,7 @@ header{
     display:flex;
     flex-direction: column;
     padding:135px 10% 50px 10%;
-    background-image: url(./Aptitude-Employment-Tests-Prep.jpg);
+    background-image: url(../Photos/Aptitude-Employment-Tests-Prep.jpg);
     background-size: cover;
     position: relative;
     justify-content: center;
@@ -407,7 +407,7 @@ hr{
 
 #notes > div{
     flex-basis:calc(33% - 85px);
-    background-image: url(./card-removebg-preview.png);
+    background-image: url(../Photos/card-removebg-preview.png);
     color:black;
     padding:150px 40px 40px 40px;
     background-size: cover;
@@ -433,7 +433,9 @@ article{
     font-size:3rem;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
+    gap:10px;
 }
 
 article div:nth-child(2){
@@ -542,20 +544,135 @@ article div:nth-child(2):hover{
         font-size: 1.2rem;
     }  
     nav img{
-        right:20px;
+        left:20px;
     }
     nav span{
-        left:0px;
+        right:0px;
     }
+}
+
+@media(min-width:1065px){
+    nav i{
+        display: none!important;
+    }   
 }
 @media(max-width:1065px){
     nav > div{
         display:none;
-    }  
+    }
+    nav i{
+        display: block;
+    }
+    nav{
+        flex-direction: column!important;
+    }
+    nav > div{
+        width:100%;
+        background-color: white;
+        text-align: center;
+    } 
 }
 
 @media(max-width:816px){
     .res aside{
         flex-direction: column;
+    }
+}
+
+/************************************/
+
+header{
+    line-height: 70px;
+    text-align: center;
+}
+
+.mainTitle{
+    text-align: center;
+    padding-left:10px;
+    padding-right: 10px;
+}
+
+nav i{
+    position: absolute;
+    right:125px;
+    transition: 0.6s;
+}
+
+@media(max-width:660px){
+    header h1{
+        font-size:3rem;
+    }
+    header{
+        line-height: 60px;
+    }
+    #resBox h1{
+        font-size: 1.5rem!important;
+    }
+    .mainTitle{
+        font-size:1.7rem;
+    }
+}
+
+@media(max-width:470px){
+    #signOut{
+        padding-left:10px;
+        padding-right:10px;
+    }
+    nav{
+        height:66px;
+    }
+    nav img{
+        height:50px;
+    }
+    nav i{
+        right:105px;
+    }
+    nav > div:nth-child(1){
+        margin-top: 375px;
+    }
+    
+}
+
+@media(max-width:400px){
+    #signOut{
+        font-size: 1rem;;
+    }
+    nav img{
+        height:45px;
+    }
+    nav i{
+        right:90px;
+    }
+    #table{
+        font-size:0.8rem!important;
+    }
+    #table td,#table th{
+        padding:2px;
+    }
+}
+@media(max-width:357px){
+    #signOut{
+        position: absolute;
+        top:100%;
+        width:100%;
+        padding-top:5px;
+        padding-bottom:5px;
+        padding-left:0;
+        padding-right:0;
+        height: fit-content;
+        background-color: #ffe2b4;
+        color:var(--sec);
+        font-weight: bolder;
+        border-bottom: 2px solid var(--sec);
+        border-top: 2px solid var(--sec);
+    }
+    nav i{
+        right:10px;
+    }
+    header h1{
+        font-size:2.5rem;
+    }
+    header{
+        line-height: 50px;
     }
 }
